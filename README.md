@@ -11,8 +11,8 @@ To get a WebID and a Pod on PodSpaces:
 
 - Go to [PodSpaces](https://start.inrupt.com/).
 - The application displays your WebID and Pod Storage details:
-- WebID: https://id.inrupt.com/{username} .
-- Pod Storage: https://storage.inrupt.com/{Root Container}
+- WebID: ```https://id.inrupt.com/{username}``` 
+- Pod Storage: ```https://storage.inrupt.com/{Root Container}```
 
 Inrupt’s PodSpaces provides an [Application Registration page](https://login.inrupt.com/registration.html) where you can statically register your applications to generate credentials for them.
 - Go to [PodSpaces Application Registration](https://login.inrupt.com/registration.html) page.
