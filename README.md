@@ -47,9 +47,13 @@ Enter your Client Secret.
 Enter client_secret_basic
 
 ## Examples of use
+
+Getting our list of pods:
 ```
 curl -X GET http://localhost:8080/api/all-pods\?webid\=SUBSTITUTE_YOUR_WEBID
 ```
+
+Creating a query record:
 
 ```
 curl -X POST http://localhost:8080/api/query/create \
@@ -63,6 +67,11 @@ curl -X POST http://localhost:8080/api/query/create \
       "category": "Creative works and authors" }'
 ```
 
+Retrieving a query record:
+
+```
+curl -X GET http://localhost:8080/api/query/get\?resourceURL\=https://storage.inrupt.com/20052ae5-630f-41f1-9f0a-595283170307/expenses/20260323/search1
+```
 
 ## References
 - https://docs.inrupt.com/sdk/java-sdk/tutorial
