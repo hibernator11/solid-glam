@@ -5,7 +5,7 @@ The project presents Spring Boot personal (i.e., single-user) Web service on htt
 
 This example is based on the tutorial https://docs.inrupt.com/sdk/java-sdk/tutorial.
 
-Solid is an evolution of the web by its creator Sir Tim Berners-Lee realizing his original vision for the Web. User can store information once and decide who can access what, when you need services like mortgage applications or medical care. As artificial intelligence becomes central to digital services, Solid ensures people maintain control over their data while benefiting from intelligent applications.
+[Solid](https://solidproject.org/) is an evolution of the web by its creator Tim Berners-Lee realizing his original vision for the Web. User can store information once and decide who can access what, when you need services like mortgage applications or medical care. As artificial intelligence becomes central to digital services, Solid ensures people maintain control over their data while benefiting from intelligent applications.
 
 ## Prerequisites
 
