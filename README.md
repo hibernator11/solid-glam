@@ -44,7 +44,7 @@ Enter your Client Secret.
 
 ```read -s MY_AUTH_FLOW && export MY_AUTH_FLOW```
 
-Enter client_secret_basic
+Enter ```client_secret_basic```
 
 ## Examples of use
 
