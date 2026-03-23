@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>4.0.3</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>solid</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>solid</name>
+	<description>Demo project for Spring Boot</description>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.inrupt.client</groupId>
+			<artifactId>inrupt-client-core</artifactId>
+		</dependency>
+
+		<!-- Source: https://mvnrepository.com/artifact/com.inrupt.client/inrupt-client-jackson -->
+		<dependency>
+			<groupId>com.inrupt.client</groupId>
+			<artifactId>inrupt-client-jackson</artifactId>
+		</dependency>
+
+		<!-- Source: https://mvnrepository.com/artifact/com.inrupt.client/inrupt-client-jsonb -->
+		<dependency>
+			<groupId>com.inrupt.client</groupId>
+			<artifactId>inrupt-client-jsonb</artifactId>
+			<!--<version>2.0.0</version>
+			<scope>test</scope>-->
+		</dependency>
+
+		<!-- Source: https://mvnrepository.com/artifact/com.inrupt.client/inrupt-client-openid -->
+		<dependency>
+			<groupId>com.inrupt.client</groupId>
+			<artifactId>inrupt-client-openid</artifactId>
+		</dependency>
+
+		<!-- Source: https://mvnrepository.com/artifact/com.inrupt.client/inrupt-client-webid -->
+		<dependency>
+			<groupId>com.inrupt.client</groupId>
+			<artifactId>inrupt-client-webid</artifactId>
+		</dependency>
+
+		<!-- Source: https://mvnrepository.com/artifact/com.inrupt.client/inrupt-client-solid -->
+		<dependency>
+			<groupId>com.inrupt.client</groupId>
+			<artifactId>inrupt-client-solid</artifactId>
+		</dependency>
+
+		<!-- Source: https://mvnrepository.com/artifact/com.inrupt.client/inrupt-client-api -->
+		<dependency>
+			<groupId>com.inrupt.client</groupId>
+			<artifactId>inrupt-client-api</artifactId>
+		</dependency>
+
+		<!-- Source: https://mvnrepository.com/artifact/com.inrupt.rdf/inrupt-rdf-wrapping-commons -->
+		<dependency>
+			<groupId>com.inrupt.rdf</groupId>
+			<artifactId>inrupt-rdf-wrapping-commons</artifactId>
+			<version>1.1.1</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-jackson</artifactId>
+	    </dependency>
+	    <dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-jackson-test</artifactId>
+		    <scope>test</scope>
+	    </dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Source: https://mvnrepository.com/artifact/com.inrupt.client/inrupt-client-okhttp -->
+		<dependency>
+			<groupId>com.inrupt.client</groupId>
+			<artifactId>inrupt-client-okhttp</artifactId>
+		</dependency>
+
+		<!-- Source: https://mvnrepository.com/artifact/com.inrupt.client/inrupt-client-jena -->
+		<dependency>
+			<groupId>com.inrupt.client</groupId>
+			<artifactId>inrupt-client-jena</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.inrupt.client</groupId>
+				<artifactId>inrupt-client-bom</artifactId>
+				<version>2.0.0</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
