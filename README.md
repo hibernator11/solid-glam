@@ -1,4 +1,4 @@
-# solid-GLAM
+# Solid-GLAM
 The project presents Spring Boot personal (i.e., single-user) Web service on http://localhost:8080 that uses Inrupt’s Java client library to:
 - Read the Pod URLs associated with the user’s WebID.
 - Store and manage SPARQL query records in the user’s Pod (Personal Online Datastore). The query records are stored as Resource Description Framework (RDF) resource.
