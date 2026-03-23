@@ -3,6 +3,49 @@ The project presents Spring Boot personal (i.e., single-user) Web service on htt
 - Read the Pod URLs associated with the user’s WebID.
 - Store and manage SPARQL query records in the user’s Pod (Personal Online Datastore). The query records are stored as Resource Description Framework (RDF) resource.
 
+## Prerequisites
+
+To get a WebID and a Pod on PodSpaces:
+
+- Go to [PodSpaces](https://start.inrupt.com/).
+- The application displays your WebID and Pod Storage details:
+- WebID: https://id.inrupt.com/{username} .
+- Pod Storage: https://storage.inrupt.com/{Root Container}
+
+Inrupt’s PodSpaces provides an [Application Registration page](https://login.inrupt.com/registration.html) where you can statically register your applications to generate credentials for them.
+- Go to [PodSpaces Application Registration](https://login.inrupt.com/registration.html) page.
+- If not already logged in, you will redirect to the login page. Log in with your username and password.
+- In the Register an app textbox, enter your application’s name and click Register.
+- The Client ID and Client Secret for your application appears under Apps You’ve Registered list.
+
+## Run your server and Enter Your Client Credentials
+
+Export your registered client credentials (see the Prerequisites) as environment variables.
+
+1. Identity Provider (the IDP with whom you registered your application):
+
+```read -s MY_SOLID_IDP && export MY_SOLID_IDP```
+
+Enter https://login.inrupt.com
+
+2. Client ID:
+
+```read -s MY_SOLID_CLIENT_ID && export MY_SOLID_CLIENT_ID```
+
+Enter your Client ID.
+
+3. Client Secret:
+
+```read -s MY_SOLID_CLIENT_SECRET && export MY_SOLID_CLIENT_SECRET```
+
+Enter your Client Secret.
+
+4. Authentication Flow Method:
+
+```read -s MY_AUTH_FLOW && export MY_AUTH_FLOW```
+
+Enter client_secret_basic
+
 ## Examples of use
 ```
 curl -X GET http://localhost:8080/api/all-pods\?webid\=SUBSTITUTE_YOUR_WEBID
