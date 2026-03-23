@@ -3,6 +3,8 @@ The project presents Spring Boot personal (i.e., single-user) Web service on htt
 - Read the Pod URLs associated with the user’s WebID.
 - Store and manage SPARQL query records in the user’s Pod (Personal Online Datastore). The query records are stored as Resource Description Framework (RDF) resource.
 
+This example is based on the tutorial https://docs.inrupt.com/sdk/java-sdk/tutorial.
+
 ## Prerequisites
 
 To get a WebID and a Pod on PodSpaces:
@@ -53,7 +55,7 @@ Getting our list of pods:
 curl -X GET http://localhost:8080/api/all-pods\?webid\=SUBSTITUTE_YOUR_WEBID
 ```
 
-Creating a query record:
+Creating a query record to store a [federated SPARQL query to retrieve all the works from the National Library of France of the author Ramón y Cajal](https://w.wiki/KDm9):
 
 ```
 curl -X POST http://localhost:8080/api/query/create \
@@ -80,3 +82,4 @@ Please, note that the datasets used in this project have separate licences.
 
 ## References
 - https://docs.inrupt.com/sdk/java-sdk/tutorial
+- https://solidproject.org/
