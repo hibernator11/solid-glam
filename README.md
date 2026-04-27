@@ -74,7 +74,7 @@ curl -X POST http://localhost:8080/api/query/create \
 Retrieving a query record:
 
 ```
-curl -X GET http://localhost:8080/api/query/get\?resourceURL\=https://storage.inrupt.com/20052ae5-630f-41f1-9f0a-595283170307/expenses/20260323/search1
+curl -X GET http://localhost:8080/api/query/get\?resourceURL\=https://storage.inrupt.com/20052ae5-630f-41f1-9f0a-595283170307/query/20260323/search1
 ```
 
 ## Licence
